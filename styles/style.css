@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  /*font-family: "Young Serif", serif;*/
+}
+:root {
+  /*Colors*/
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  /*Primary */
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--Eggshell);
+}
+main {
+  max-width: 35rem;
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--Wenge-Brown);
+  background-color: var(--White);
+  border-radius: 15px;
+
+  margin: 1rem 0;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+img {
+  width: 500px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", serif;
+  margin: 1rem 0 0.5rem;
+}
+h1 {
+  color: var(--Dark-Charcoal);
+  font-family: "Young Serif", serif;
+  font-size: 1.7rem;
+}
+.des {
+  font-size: 0.85rem;
+  margin: 0.5rem 0 2rem;
+}
+h3 {
+  font-size: 1rem;
+  color: var(--Dark-Raspberry);
+  margin: 0.5rem 0;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.general,
+.ingredients-list,
+.Instructions {
+  font-size: 0.85rem;
+  padding: 0 2rem;
+  margin-bottom: 0.5rem;
+}
+.general {
+  padding: 0 3rem;
+}
+ul {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+ul li span {
+  font-weight: 700;
+}
+.box {
+  max-width: 22rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.box p:nth-child(2) {
+  color: var(--Nutmeg);
+  font-weight: 600;
+}
+.nutrition-des {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
